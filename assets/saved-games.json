@@ -1,12 +1,1 @@
-{
-  "123123" : {
-    "id":123123,
-    "hint": "_ _ _ _ A",
-    "leftAttempts": 5,
-  },
-  "456" : {
-    "id":456,
-    "hint": "_ _ _ _ A",
-    "leftAttempts": 5,
-  }
-}
+{"1":{"id":1,"hint":"_ _ _ _ A","leftAttempts":5}}
