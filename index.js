@@ -1,55 +1,44 @@
 const express = require('express')
+const bodyParser = require('body-parser');
 const app = express()
-const Dictionary = require('./src/Dictionary');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-Dictionary.getWord().then(word => console.log('word: ', word))
+const Game = require('./src/game.js')
 
-// app.get('/', (req, res) => {
-//   res.send({
-//       id:1,
-//       hint: '_ _ _ _ _',
-//       leftAttempts: 5,
-//       image: `
-//       |______
-//       |     |
-//       |    ( )
-//       |     |
-//       |    /|\\
-//       |   / | \\
-//       |     |
-//       |    / \\
-//       |   /   \\
-//       |  /     \\
-//       `
-//   })
-// })
+app.get('/game', (req, res) => {
+    console.log(req.query)
+    Game.create()
+        .then(game => {
+            res.send(game)
+        })
+        .catch(err => {
+            console.log(err)
+            res.status(500).send({
+                error: 'Game could not be created'
+            })
+        })
+})
 
-app.get('/', (req, res) => {
-  Game.create()
-    .then(game => {
-      res.send(game)
-    })
-    .catch(err => {
-      res.status(500).send({
-        error: 'Game could not be created'
+app.post('/game/:gameId/attempt', (req, res) => {
+    const gameId = req.params.gameId
+    const attempt = req.body
+    Game.attempt(gameId, attempt)
+      .then(result => {
+        if (result.isGameOver) {
+          res.status(500).send({
+            error: 'You lose XD'
+          })
+        }
+        if (result.isInvalid) {
+          res.status(400).send(result)
+        }
       })
-    })
+      .catch(err => {
+        console.log(err)
+      })
 })
 
 app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+    console.log('Example app listening on port 3000!')
 })
-
-//ES2015 Template strings
-// var draw = `
-// |______
-// |     |
-// |    ( )
-// |     |
-// |    /|\\
-// |   / | \\
-// |     |
-// |    / \\
-// |   /   \\
-// |  /     \\
-// `

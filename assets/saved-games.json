@@ -1,12 +1,8 @@
 {
-  "123123" : {
-    "id":123123,
-    "hint": "_ _ _ _ A",
-    "leftAttempts": 5,
-  },
-  "456" : {
-    "id":456,
-    "hint": "_ _ _ _ A",
-    "leftAttempts": 5,
-  }
+    "db0625df868097d6d5bd1e68": {
+        "word": "aligerareis",
+        "hint": "_ _ _ _ e _ _ _ _ _ _",
+        "leftAttempts": 5,
+        "id": "db0625df868097d6d5bd1e68"
+    }
 }
