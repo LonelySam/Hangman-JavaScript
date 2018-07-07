@@ -26,10 +26,11 @@ class Game {
 	}
 
 	static createHint(word) {
-		// TODO replace duplicate characters too in hint
 		const wordLength = word.length
 		const index = Math.floor(Math.random() * wordLength);
-		return Array.from(word).map((ch, i) => i === index ? ch : '_').join(' ')
+		const arrayWord = Array.from(word);
+		const letter = arrayWord[index];
+		return arrayWord.map(ch => ch === letter ? ch : '_').join(' ')
 	}
 
 	static attempt(gameId, attempt) {
