@@ -29,7 +29,6 @@ class Dictionary {
                 gameCondition = true;
             }
         } while (!gameCondition);
-        console.log(word);
         if(includeAccents === 'false') {
           return word.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         }
