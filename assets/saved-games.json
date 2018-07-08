@@ -1,20 +1,44 @@
 {
-    "db0625df868097d6d5bd1e68": {
-        "word": "aligerareis",
-        "hint": "_ _ _ _ e _ _ _ _ _ _",
-        "leftAttempts": 5,
-        "id": "db0625df868097d6d5bd1e68"
+    "8005055ba3a4ea9bb362c233": {
+        "word": "embraveciendoles",
+        "hint": "e _ _ _ _ _ e _ _ e _ _ _ _ e _",
+        "leftAttempts": "3",
+        "id": "8005055ba3a4ea9bb362c233"
     },
-    "e743e14c999ed90ade961cf4": {
-        "word": "entrepunzadura",
-        "hint": "_ _ _ _ _ _ _ _ _ a _ _ _ a",
-        "leftAttempts": 5,
-        "id": "e743e14c999ed90ade961cf4"
+    "8ff33e7a0294fdd810e5ae9a": {
+        "word": "lanchares",
+        "hint": "_ a _ _ _ a _ _ _",
+        "leftAttempts": "3",
+        "id": "8ff33e7a0294fdd810e5ae9a"
     },
-    "98b7bcbd6642e490de257187": {
-        "word": "garantiendo",
-        "hint": "_ _ _ _ _ _ i _ _ _ _",
+    "558c02e90c42e2302bc39f16": {
+        "word": "desenfardelarás",
+        "hint": "d _ _ _ _ _ _ _ d _ _ _ _ _ _",
+        "leftAttempts": "3",
+        "id": "558c02e90c42e2302bc39f16"
+    },
+    "1a4383582757083507c721da": {
+        "word": "amañas",
+        "hint": "_ m _ _ _ _",
+        "leftAttempts": "3",
+        "id": "1a4383582757083507c721da"
+    },
+    "67bd0d281fc1b32ab109e3b2": {
+        "word": "nao",
+        "hint": "_ _ o",
+        "leftAttempts": "3",
+        "id": "67bd0d281fc1b32ab109e3b2"
+    },
+    "0103a9b740ebaf9b87eff434": {
+        "word": "búho",
+        "hint": "_ _ h _",
+        "leftAttempts": "3",
+        "id": "0103a9b740ebaf9b87eff434"
+    },
+    "57484648726bc29b0496342d": {
+        "word": "zunchar",
+        "hint": "_ _ _ c _ _ _",
         "leftAttempts": 5,
-        "id": "98b7bcbd6642e490de257187"
+        "id": "57484648726bc29b0496342d"
     }
 }
