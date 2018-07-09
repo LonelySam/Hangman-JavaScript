@@ -7,7 +7,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const Game = require('./src/game.js')
 
 app.get('/game', (req, res) => {
-    console.log(req.query)
     Game.create(req.query)
         .then(game => {
             res.send(game)
