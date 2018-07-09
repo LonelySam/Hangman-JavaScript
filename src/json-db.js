@@ -18,7 +18,7 @@ class JSONDb {
 
 	static getGameById(gameId) {
 		return new Promise((resolve, reject) => {
-			const JSON_DB = require('./saved-games.json');
+			const JSON_DB = require('../assets/saved-games.json');
 			const game = JSON_DB[gameId];
 			if (game === undefined) {
 				return reject('Game not found');
